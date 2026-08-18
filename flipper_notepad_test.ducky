@@ -1,0 +1,12 @@
+REM flipper_notepad_test.ducky
+REM Benign Flipper Zero BadUSB (DuckyScript) — opens Notepad and types a message
+REM Usage: save as .ducky, copy to /BadUSB/ on Flipper SD, test only on devices you own.
+
+DELAY 2000
+GUI r
+DELAY 200
+STRING notepad.exe
+ENTER
+DELAY 500
+STRING Hello from Flipper Zero! This is a harmless test message.
+ENTER
